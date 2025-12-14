@@ -1,0 +1,19 @@
+# Android
+.gradle/
+local.properties
+/build/
+*.iml
+.idea/
+captures/
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
