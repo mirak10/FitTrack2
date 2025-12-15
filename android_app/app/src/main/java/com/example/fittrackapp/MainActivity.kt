@@ -12,7 +12,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import com.example.fittrackapp.data.repository.AuthRepository
+<<<<<<< HEAD
 import com.example.fittrackapp.ui.screens.*
+=======
+import com.example.fittrackapp.ui.screens.* 
+>>>>>>> b2e8ad1b48eb3c8ab0b3617a956addb1b8cea875
 import com.example.fittrackapp.ui.theme.FitTrackAppTheme
 import com.google.firebase.auth.FirebaseAuth
 
