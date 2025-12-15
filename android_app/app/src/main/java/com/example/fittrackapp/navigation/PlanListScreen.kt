@@ -19,11 +19,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.fittrackapp.data.WorkoutRepository
 import com.example.fittrackapp.data.database.model.WorkoutWithExercises
 import com.example.fittrackapp.viewmodel.WorkoutsViewModel
-import com.google.firebase.auth.FirebaseAuth
-import com.example.fittrackapp.data.database.dao.WorkoutDao // Assuming you can inject DAO for factory
 
-// NOTE: For a real app, you would use Hilt/Koin for proper DI.
-// We are manually injecting the Repository dependencies for now.
 @Composable
 fun WorkoutViewModelFactory(repository: WorkoutRepository): WorkoutsViewModel {
     return viewModel(factory = object : androidx.lifecycle.ViewModelProvider.Factory {

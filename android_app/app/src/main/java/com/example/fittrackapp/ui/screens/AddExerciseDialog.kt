@@ -59,7 +59,6 @@ fun AddExerciseDialog(
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.fillMaxWidth()
                 )
-                // NOTE: We omit the time/rest time input fields for now for simplicity.
 
                 Spacer(modifier = Modifier.height(24.dp))
 
@@ -75,7 +74,7 @@ fun AddExerciseDialog(
                     Button(
                         onClick = {
                             val newExercise = Exercise(
-                                workoutId = 0, // Placeholder ID, will be set by Repository
+                                workoutId = 0,
                                 name = name.trim(),
                                 sets = sets.toInt(),
                                 reps = reps.toInt(),

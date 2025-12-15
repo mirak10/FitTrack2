@@ -82,7 +82,7 @@ fun WorkoutDetailContent(
 ) {
     // 1. Start Workout Button
     Button(
-        onClick = onStartWorkout, // *** UPDATED ONCLICK ACTION ***
+        onClick = onStartWorkout,
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 16.dp),

@@ -100,7 +100,7 @@ fun WorkoutSessionScreen(
                 // Pause/Resume Button
                 Button(
                     onClick = {
-                        if (state.isRunning) viewModel.pauseSession() else viewModel.startNewSession(0) // Note: Needs better handling for resume vs start
+                        if (state.isRunning) viewModel.pauseSession() else viewModel.startNewSession(0)
                     },
                     // Only enabled if not finished
                     enabled = !state.isFinished,

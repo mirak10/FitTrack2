@@ -12,10 +12,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import com.example.fittrackapp.data.repository.AuthRepository
-import com.example.fittrackapp.ui.screens.* // Ensure this imports LoginScreen, SignUpScreen, etc.
+import com.example.fittrackapp.ui.screens.*
 import com.example.fittrackapp.ui.theme.FitTrackAppTheme
 import com.google.firebase.auth.FirebaseAuth
-// Add any other necessary imports for your screens/repositories
 
 /**
  * Enum class to manage all screens/states of the application.
@@ -72,7 +71,6 @@ class MainActivity : ComponentActivity() {
 
                         // --- Authenticated App Flow ---
                         Screen.WORKOUTS_LIST -> WorkoutsListScreen(
-                            // NOTE: You will need to add a Logout button to WorkoutsListScreen
                             // to properly navigate back to LOGIN state.
                             onNavigateToCreate = { currentScreen = Screen.CREATE_WORKOUT },
                             onNavigateToDetail = { id ->

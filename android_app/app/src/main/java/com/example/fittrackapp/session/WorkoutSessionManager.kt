@@ -28,7 +28,7 @@ data class WorkoutSessionState(
 )
 
 class WorkoutSessionManager(
-    private val workoutData: WorkoutWithExercises, // NOW TAKES REAL DATA
+    private val workoutData: WorkoutWithExercises,
     private val scope: CoroutineScope
 ) {
     private var sessionStartTime: Long = 0L
